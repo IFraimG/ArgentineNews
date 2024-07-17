@@ -1,4 +1,4 @@
-package com.example.myapplication.data.remote
+package com.example.myapplication.data.dto
 
 import com.google.gson.annotations.SerializedName
 import com.squareup.moshi.Json
@@ -8,7 +8,7 @@ data class NewsDTO (
     val title: String,
 
     @SerializedName("description")
-    val description: String,
+    val description: String?,
 
     @SerializedName("urlToImage")
     val urlToImage: String?,
@@ -17,5 +17,11 @@ data class NewsDTO (
     val author: String?,
 
     @SerializedName("content")
-    val content: String
+    val content: String?,
+
+    val translatedTitle: String?,
+    val translatedDescription: String?,
+    val translatedContent: String?,
+    val translatedAuthor: String?
+
 )

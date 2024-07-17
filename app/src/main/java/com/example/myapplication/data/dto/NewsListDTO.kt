@@ -1,7 +1,6 @@
-package com.example.myapplication.data.remote
+package com.example.myapplication.data.dto
 
 import com.google.gson.annotations.SerializedName
-import com.squareup.moshi.Json
 
 data class NewsListDTO(
     @SerializedName("articles")
