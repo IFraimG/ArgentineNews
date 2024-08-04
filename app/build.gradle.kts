@@ -91,6 +91,7 @@ dependencies {
 
     implementation("androidx.fragment:fragment:1.8.1")
     implementation("androidx.fragment:fragment-ktx:1.8.1")
+    implementation("androidx.fragment:fragment-compose:1.8.1")
     implementation(libs.androidx.appcompat)
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")

@@ -3,12 +3,12 @@ package com.example.myapplication.data.request
 import com.google.gson.annotations.SerializedName
 
 data class TranslateTextRequest(
-    @SerializedName("html")
+    @SerializedName("q")
     val text: String,
 
-    @SerializedName("from")
+    @SerializedName("source")
     val from: String = "es",
 
-    @SerializedName("to")
+    @SerializedName("target")
     val to: String = "ru",
 )

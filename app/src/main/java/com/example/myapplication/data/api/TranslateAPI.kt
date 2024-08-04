@@ -11,10 +11,9 @@ import retrofit2.http.POST
 
 interface TranslateAPI {
 
-    @Headers(
-        "x-rapidapi-host: ${Configs.RAPID_URL}",
-        "x-rapidapi-key: ${BuildConfig.rapidKey}"
-    )
-    @POST("translator/html")
+    // "x-rapidapi-host: ${Configs.RAPID_URL}",
+    // "x-rapidapi-key: ${BuildConfig.rapidKey}"
+    @Headers("Content-Type: application/json")
+    @POST("translate")
     suspend fun translateNews(@Body translateNews: TranslateTextRequest): Response<TranslateNewsDTO>
 }
